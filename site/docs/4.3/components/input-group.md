@@ -73,11 +73,11 @@ Add the relative form sizing classes to the `.input-group` itself and contents w
 **Sizing on the individual input group elements isn't supported.**
 
 {% capture example %}
-<div class="input-group input-group-sm mb-3">
+<div class="input-group input-group-lg mb-3">
   <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+    <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
   </div>
-  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
 </div>
 
 <div class="input-group mb-3">
@@ -87,11 +87,18 @@ Add the relative form sizing classes to the `.input-group` itself and contents w
   <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 </div>
 
-<div class="input-group input-group-lg">
+<div class="input-group input-group-sm mb-3">
   <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
   </div>
-  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+
+<div class="input-group input-group-xs">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-xs">Extra small</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-xs">
 </div>
 {% endcapture %}
 {% include example.html content=example %}

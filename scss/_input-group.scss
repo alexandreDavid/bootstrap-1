@@ -127,63 +127,17 @@
 // Remix the default form control sizing classes into new ones for easier
 // manipulation.
 
-.input-group-xs > .form-control:not(textarea),
-.input-group-xs > .custom-select {
-  height: $input-height-xs;
+.input-group-xs {
+  @include input-group-size($input-height-xs, $input-padding-y-xs, $input-padding-x-xs, $input-font-size-xs, $input-line-height-xs, $input-border-radius-xs)
 }
 
-.input-group-xs > .form-control,
-.input-group-xs > .custom-select,
-.input-group-xs > .input-group-prepend > .input-group-text,
-.input-group-xs > .input-group-append > .input-group-text,
-.input-group-xs > .input-group-prepend > .btn,
-.input-group-xs > .input-group-append > .btn {
-  padding: $input-padding-y-xs $input-padding-x-xs;
-  @include font-size($input-font-size-xs);
-  line-height: $input-line-height-xs;
-  @include border-radius($input-border-radius-xs);
+.input-group-sm {
+  @include input-group-size($input-height-sm, $input-padding-y-sm, $input-padding-x-sm, $input-font-size-sm, $input-line-height-sm, $input-border-radius-sm)
 }
 
-.input-group-sm > .form-control:not(textarea),
-.input-group-sm > .custom-select {
-  height: $input-height-sm;
+.input-group-lg {
+  @include input-group-size($input-height-lg, $input-padding-y-lg, $input-padding-x-lg, $input-font-size-lg, $input-line-height-lg, $input-border-radius-lg)
 }
-
-.input-group-sm > .form-control,
-.input-group-sm > .custom-select,
-.input-group-sm > .input-group-prepend > .input-group-text,
-.input-group-sm > .input-group-append > .input-group-text,
-.input-group-sm > .input-group-prepend > .btn,
-.input-group-sm > .input-group-append > .btn {
-  padding: $input-padding-y-sm $input-padding-x-sm;
-  @include font-size($input-font-size-sm);
-  line-height: $input-line-height-sm;
-  @include border-radius($input-border-radius-sm);
-}
-
-.input-group-lg > .form-control:not(textarea),
-.input-group-lg > .custom-select {
-  height: $input-height-lg;
-}
-
-.input-group-lg > .form-control,
-.input-group-lg > .custom-select,
-.input-group-lg > .input-group-prepend > .input-group-text,
-.input-group-lg > .input-group-append > .input-group-text,
-.input-group-lg > .input-group-prepend > .btn,
-.input-group-lg > .input-group-append > .btn {
-  padding: $input-padding-y-lg $input-padding-x-lg;
-  @include font-size($input-font-size-lg);
-  line-height: $input-line-height-lg;
-  @include border-radius($input-border-radius-lg);
-}
-
-.input-group-xs > .custom-select,
-.input-group-sm > .custom-select,
-.input-group-lg > .custom-select {
-  padding-right: $custom-select-padding-x + $custom-select-indicator-padding;
-}
-
 
 // Prepend and append rounded corners
 //
